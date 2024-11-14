@@ -2,7 +2,7 @@
 
 **Eventify** is a Node.js application for managing events in Google Calendar and sending event reminders on Discord. This project has two parts: Part 1 covers Google Calendar integration with CRUD operations, and Part 2 covers Discord integration for event reminders.
 
----
+
 
 ## Part 1: Google Calendar Integration (CRUD Operations)
 
@@ -22,7 +22,7 @@ Integrate Google Calendar API to enable users to create, read, update, and delet
 #### Step 1: Set Up a Google Cloud Project and Enable Google Calendar API
 
 1. **Create a New Google Cloud Project**:
-   - Go to the [Google Cloud Console]([https://console.cloud.google.com/](https://console.cloud.google.com/)).
+   - Go to the [Google Cloud Console](https://console.cloud.google.com/).
    - Click on **Select a Project** on top header > **New Project**.
    - Name the project **Eventify Calendar Manager** and create it.
 
@@ -99,12 +99,11 @@ Integrate Google Calendar API to enable users to create, read, update, and delet
 ### Objective
 Integrate the Discord API to send event reminders in a designated channel shortly before each event begins. This involves setting up a Discord bot, configuring message permissions, scheduling reminders, and linking reminders to events managed in Google Calendar.
 
----
+
 
 ### Prerequisites
-- **Discord Account** with server permissions (to add and configure the bot).
+- **Discord Account** with server permissions (to add and configure the bot, create new server if don't have permission for existing ones).
 - **Discord Developer Portal Access** to create and manage the bot.
-- **Node.js and npm** (already set up in Part 1).
 
 ---
 
@@ -186,4 +185,3 @@ Integrate the Discord API to send event reminders in a designated channel shortl
    - Ensure the bot handles cases where it cannot access Google Calendar (e.g., due to token expiration).
    - Add error handling for scenarios where the bot cannot post to Discord (e.g., channel permissions issues).
 
----
